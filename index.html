@@ -155,6 +155,198 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-ubuntu16-04装docker和redis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/06/ubuntu16-04装docker和redis/">ubuntu16.04装docker</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/06/ubuntu16-04装docker和redis/" class="archive-article-date">
+  	<time datetime="2018-04-06T01:08:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#redis<br>$ sudo apt-get install redis-server<br>$ redis server<br>$ redis-cli</p>
+<p>#docker<br>$ sudo apt-get update<br>$ sudo apt-install docker<br>检测装好没有，$service docker start结果没有，输入$docker跟着引导安装<br>$sudo apt install docker.io<br>检查docker的版本docker –version</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/06/ubuntu16-04装docker和redis/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Ubuntu16-04中github与pycharm连接" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/04/Ubuntu16-04中github与pycharm连接/">Ubuntu16.04中github与pycharm连接</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/04/Ubuntu16-04中github与pycharm连接/" class="archive-article-date">
+  	<time datetime="2018-04-04T01:12:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1、在系统中安装git，在terminal中输入以下命令<br>sudo apt-get update<br>sudo apt-get install git</p>
+<p>2、对git进行配置，在terminal中输入以下命令<br>git config –global user.name “zhangdoubledong”<br>git config –global user.email “zhangdoubledong@163.com”<br>使用以下命令可以看到刚才的配置<br>git config –list</p>
+<p>3、对pycharm进行配置，依次点击<br>file–setting–version control–git首先要让pycharm检测到本地安装的git应用程序<br>file–setting–version control–github其次需要在此对话框中输入github用户名和密码，点击test可以看到是否测试成功</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/04/Ubuntu16-04中github与pycharm连接/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-win10局域网添加打印机" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/03/win10局域网添加打印机/">win10局域网添加打印机</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/03/win10局域网添加打印机/" class="archive-article-date">
+  	<time datetime="2018-04-03T08:22:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>win+R后输入\192.168.1.5（连接打印机共享的那台电脑的IP），出现了“你不能访问此共享文件夹，因为你组织的安全策略阻止未经身份验证的来宾访问”，此时你需要修改win10的网络策略，win+R后输入gpedit.msc来启动本地组策略编辑器。<br>依次找到“计算机配置-管理模板-网络-Lanman工作站”这个节点，在左侧点击“启动不安全的来宾登陆”这一条策略，状态从“未配置”改成“已启用”后点击确定按钮即可。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/03/win10局域网添加打印机/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-ubuntu连接打印机" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -412,70 +604,6 @@
 
 
   
-    <article id="post-Machine-Learning" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/02/06/Machine-Learning/">Machine Learning</a>
-    </h1>
-  
-
-        
-        <a href="/2018/02/06/Machine-Learning/" class="archive-article-date">
-  	<time datetime="2018-02-06T10:33:24.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#单变量线性回归<br>监督学习包括回归问题和分类问题。<br>线性回归：假设函数H(x)对应线性、非线性等。参数对应假设函数，损失函数也成为平方误差函数，误差取关于参数的平均误差。目标就是求最小化损失函数时所对应的参数值。</p>
-<p>#当参数只有a1时，即假设函数为H(x)=a1x，损失函数对应一个抛物线形状，x轴对应a1，y轴对应假设函数的值与真实值之间的平均误差；当参数有a1和a0时，假设函数为H(x)=a1x+a0.损失函数对应三维空间中一个碗状曲面，x轴对应a0，y轴对应a1，z轴对应假设函数的值与真实值之间的平均误差（此时可以把损失函数对应曲面看成等高线来处理）。<br>学习率a：梯度下降时我们迈出多大的步子，a越小收敛慢，a越大可能不收敛甚至发散；当我们接近局部最低点时，导数值会自动变得越来越小，所以梯度下降会自动采取较小幅度，所以没必要再另外减小学习率a。梯度下降求解的是局部最优解，但线性回归的损失函数总是碗状的凸函数，只有一个全局最优解。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/02/06/Machine-Learning/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-VMware-Ubuntu" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -673,69 +801,10 @@
 
 
   
-    <article id="post-在时间的尾巴上" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/03/在时间的尾巴上/">在时间的尾巴上</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/03/在时间的尾巴上/" class="archive-article-date">
-  	<time datetime="2018-01-03T08:03:57.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>某个冬季，大雾。鼻子冻得缩成了一团，你裹紧衣服，行色匆匆。<br>  嘭——<br>  毫无预兆的，你与一个迎面而来的人狠狠的撞在一起。<br>  人仰马翻，手足无措。<br>  第一次提到即将步入大二时，我就犹如置身于那样的场景。那样的莽撞，那样突然。<br>  在那时，我才发现我一不小心踩到了大一的尾巴。然而讽刺的是，尖叫着，仓皇而逃，不仅仅有大一，还有我这个踩尾巴的人。<br>  大一就这样逃掉了。<br>  之前自己有一句对我们大一的调侃，新官上任三把火，新生上课前三排。<br>  开课之初，占个前排作为是份憋屈的苦差事。总是会早早的去教室，但总是会有比我们更早去教室的同学。<br>  自然地，坐后排成了惯例。在后排望去，黑压压一片全是学生，场面甚为壮观，不过，却不会影响后排会渴睡的风水定理。下课后，倒也会安慰自己，后排嘛，近视看不清楚黑板。但是天知道，上次体测我视力5.0。<br>  大一下学期，该转系的同学都确定了，很多课程也就不必修了。因此，我成了我们寝室两个高数课的代表之一。课堂也变得稀稀疏疏起来，第一排不再抢手。坐在第一排，却总是觉得空空的，经常走神。用什么来解释这个呢，距离黑板太近聚焦困难？或者，粉笔灰太多，导致玻璃体混浊？<br>  大一，时间零散，但时间允许零散。我们可以在学校里任意风行或者漫步，可以游走在各个部门与社团之间，又或者，约上几个好友去踏青春游尽管不在春季。只因为我们是大一，可以无尽的潇洒，或许，踩着大一尾巴的时候，我们就该狠狠的追过去。但时间不管你是否与它签订了协议它都会在不经意见悄然而逝，在你不知所措之时改变了你的一切。<br>   清晨走在寂静的大学校园里迎来了第一缕阳光，这一缕阳光被路旁的树枝筛剪成地上的一个点，这个点如水中的涟漪一般不断的变大变成你我曾经脸庞。那时的我们天真到只知道蓝天白云，那时的我们不谙世事不知道粒粒皆辛苦，那时的我们坐看庭前花开花落。蓦然回首时间已经将周围的一切都改变了，一切似曾经却不是曾经，我们终将遇见在下一站出现的人，会欣赏到异域风情。曾经似风能够轻易的撩动我们平静如湖面的心，现在是昙花一现的那一瞬间让人难以把握，未来如灯火散发出激励人前进的热度。我们的大一生活即将逝去，即将来到的大二生活是完全陌生的但我知道畏惧不应是我们的心态！<br>  记得钱钟书说，一个人到二十岁还不狂，是没有作为的；一个人到了三十岁还狂，也是没有作为的。现在的我正是如花的年纪，这样的年纪就应该要留下如烟花般绚烂的痕迹，燃烧不是消失而是让自己的光芒照耀迷路的人，开拓不是被荆棘刺破双脚而是让自己感知到大地的热度。正青春着的你我又怎能乏味地度过这人生中最美时光，又怎甘于<br>在室内伤春悲秋叹息时光的飞逝，青春就应该有青春的朝气，就应该将死死地拽住时间的尾巴干一点有意义的事！任时光冲冲流去，我不畏惧！我要踩着尾巴大步向前！</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/03/在时间的尾巴上/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
+    <nav id="page-nav">
+      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    </nav>
   
 
 
