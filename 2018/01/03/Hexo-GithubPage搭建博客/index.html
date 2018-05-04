@@ -8,16 +8,16 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Hexo+GithubPage搭建博客 | Blog(zhangdoubledong)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.安装git（ssh连接github）2.安装Node.js3.安装Hexo（建立文件夹Blog，npm install -g hexo-cli安装hexo，hexo init Myblog，在Myblog命令行下hexo s得到本机初始网页）4.关联github（建立zhangdoubledong.github.io仓库，再修改Myblog下的_config.yml中deploy，再git c">
+  <meta name="description" content="1.安装git（ssh连接github：我们要想生成SSH key，首先就得先安装 SSH，对于 Linux 和 Mac 系统，其默认是安装 SSH 的，而对于 Windows 系统，其默认是不安装 SSH 的，不过由于我们安装了 Git Bash，其也应该自带了 SSH. 可以通过在 Git Bash 中输入ssh命令，查看本机是否安装 SSH，接下来，输入ssh-keygen -t rsa命令">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo+GithubPage搭建博客">
 <meta property="og:url" content="http://yoursite.com/2018/01/03/Hexo-GithubPage搭建博客/index.html">
 <meta property="og:site_name" content="Blog(zhangdoubledong)">
-<meta property="og:description" content="1.安装git（ssh连接github）2.安装Node.js3.安装Hexo（建立文件夹Blog，npm install -g hexo-cli安装hexo，hexo init Myblog，在Myblog命令行下hexo s得到本机初始网页）4.关联github（建立zhangdoubledong.github.io仓库，再修改Myblog下的_config.yml中deploy，再git c">
-<meta property="og:updated_time" content="2018-01-03T08:39:24.062Z">
+<meta property="og:description" content="1.安装git（ssh连接github：我们要想生成SSH key，首先就得先安装 SSH，对于 Linux 和 Mac 系统，其默认是安装 SSH 的，而对于 Windows 系统，其默认是不安装 SSH 的，不过由于我们安装了 Git Bash，其也应该自带了 SSH. 可以通过在 Git Bash 中输入ssh命令，查看本机是否安装 SSH，接下来，输入ssh-keygen -t rsa命令">
+<meta property="og:updated_time" content="2018-04-21T10:23:06.295Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo+GithubPage搭建博客">
-<meta name="twitter:description" content="1.安装git（ssh连接github）2.安装Node.js3.安装Hexo（建立文件夹Blog，npm install -g hexo-cli安装hexo，hexo init Myblog，在Myblog命令行下hexo s得到本机初始网页）4.关联github（建立zhangdoubledong.github.io仓库，再修改Myblog下的_config.yml中deploy，再git c">
+<meta name="twitter:description" content="1.安装git（ssh连接github：我们要想生成SSH key，首先就得先安装 SSH，对于 Linux 和 Mac 系统，其默认是安装 SSH 的，而对于 Windows 系统，其默认是不安装 SSH 的，不过由于我们安装了 Git Bash，其也应该自带了 SSH. 可以通过在 Git Bash 中输入ssh命令，查看本机是否安装 SSH，接下来，输入ssh-keygen -t rsa命令">
   
     <link rel="alternative" href="/atom.xml" title="Blog(zhangdoubledong)" type="application/atom+xml">
   
@@ -177,7 +177,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.安装git（ssh连接github）<br>2.安装Node.js<br>3.安装Hexo（建立文件夹Blog，npm install -g hexo-cli安装hexo，hexo init Myblog，在Myblog命令行下hexo s得到本机初始网页）<br>4.关联github（建立zhangdoubledong.github.io仓库，再修改Myblog下的_config.yml中deploy，再git config – global user.name “zhangdoubledong”和邮箱，<br>    再hexo s，npm install hexo-deployer-git –save，hexo clean，hexo g，hexo d则可以用网络浏览器浏览zhangdoubledong.github.io）<br>5.绑定域名（阿里云一元购域名，然后解析，CNAME中使用ping zhangdoubledong.github.io得到github的IP，修改仓库的Custom domain，在Myblog文件下的source中<br>    新建全格式的CNAME文件夹，内容为zhangdoubledong.tech，然后hexo clean，hexokinase个，hexo d就可用个性化域名浏览网站）<br>6.创建文件（hexo n “时间”，hexo s，hexo g，hexo d）</p>
+        <p>1.安装git（ssh连接github：我们要想生成SSH key，首先就得先安装 SSH，对于 Linux 和 Mac 系统，其默认是安装 SSH 的，而对于 Windows 系统，其默认是不安装 SSH 的，不过由于我们安装了 Git Bash，其也应该自带了 SSH. 可以通过在 Git Bash 中输入ssh命令，查看本机是否安装 SSH，接下来，输入ssh-keygen -t rsa命令，表示我们指定 RSA 算法生成密钥，然后敲三次回车键，期间不需要输入密码，之后就就会生成两个文件，分别为id_rsa和id_rsa.pub，即密钥id_rsa和公钥id_rsa.pub. 对于这两个文件，其都为隐藏文件，默认生成在以下目录：<br>Linux 系统：~/.ssh<br>Mac 系统：~/.ssh<br>Windows 系统：C:\Documents and Settings\username\.ssh<br>Windows 10 ThinkPad：C:\Users\zhangdoubledong.ssh<br>密钥和公钥生成之后，我们要做的事情就是把公钥id_rsa.pub的内容添加到 GitHub，这样我们本地的密钥id_rsa和 GitHub 上的公钥id_rsa.pub才可以进行匹配，授权成功后，就可以向 GitHub 提交代码啦！然后登陆github，先点击右上角所示的倒三角▽图标，然后再点击Settins，再点击SSH and GPG Keys进入此子界面，然后点击New SSH key按钮：我们只需要将公钥id_rsa.pub的内容粘贴到Key处的位置（Titles的内容不填写也没事），然后点击Add SSH key 即可。在我们添加完SSH key之后，也没有明确的通知告诉我们绑定成功啊！不过我们可以通过在 Git Bash 中输入ssh -T git@github.com进行测试）<br>2.安装Node.js<br>3.安装Hexo（建立文件夹Blog，在Blog下DOS中输入npm install hexo -g（或者在git bash中npm install -g hexo-cli）安装hexo，hexo init Myblog，在Myblog命令行下hexo s得到本机初始网页）<br>4.关联github（建立zhangdoubledong.github.io仓库，再修改Myblog下的_config.yml中deploy，再git config – global user.name “zhangdoubledong”和邮箱，<br>    再hexo s，npm install hexo-deployer-git –save，hexo clean，hexo g，hexo d则可以用网络浏览器浏览zhangdoubledong.github.io）<br>5.绑定域名（阿里云一元购域名，然后解析，CNAME中使用ping zhangdoubledong.github.io得到github的IP，修改仓库的Custom domain，在Myblog文件下的source中<br>    新建全格式的CNAME文件夹，内容为zhangdoubledong.tech，然后hexo clean，hexokinase个，hexo d就可用个性化域名浏览网站）<br>6.创建文件（hexo n “时间”，hexo s，hexo g，hexo d）  </p>
 
       
 

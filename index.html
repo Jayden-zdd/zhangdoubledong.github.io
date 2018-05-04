@@ -155,6 +155,143 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Cisco-Packet-Tracer" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/04/Cisco-Packet-Tracer/">Cisco Packet Tracer</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/04/Cisco-Packet-Tracer/" class="archive-article-date">
+  	<time datetime="2018-05-04T07:17:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-04</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#实验一：Cisco Packet Tracer安装使用<br>拓扑图：路由器（分配IP）、交换机、PC<br>路由器设定IP为192.168.1.1，那么PC端需要设定网关为192.168.1.1，各个PC的IP地址可设为192.168.1.10或192.168.1.11等等，无线设备连接需要关机选择模板，然后把网口改成无线网卡，配置好可以自动连接</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/04/Cisco-Packet-Tracer/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-VPS搭建shadowsock翻墙" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/21/VPS搭建shadowsock翻墙/">VPS搭建shadowsock翻墙</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/21/VPS搭建shadowsock翻墙/" class="archive-article-date">
+  	<time datetime="2018-04-21T14:03:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-21</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>#1.<br>国外的VPS提供商有好多，有名的Vultr、Digital Ocean、Linode、搬瓦工（bandwagonhost）。本文仅介绍Vultr，因为2.5美元/月性价比最高。<br><img src="https://i.imgur.com/6JCdwxk.png" alt=""></p>
+<p>#2.<br>Putty是一个免费SSH客户端，可以到 Putty官网 下载putty客户端，下载页面：<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html。SSH是一种安全协议，常用于连接服务器。" target="_blank" rel="noopener">http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html。SSH是一种安全协议，常用于连接服务器。</a> </p>
+<p>##2.1<br>打开Putty，在Session页面填写VPS IP地址和Port（默认22）：</p>
+<p>##2.2<br>然后到Connection -&gt; Data填写登录用户名（root）： </p>
+<p>##2.3<br>填写完后，顺手保存一下Session：</p>
+<p>##2.4<br>点击Open连接VPS，连接成功后，会提示输入Password，输入密码后（大小写敏感），如果出现[root@vultr ~]#表示成功登录。</p>
+<p>####（注意，SSH连接有超时时间，默认大概1分钟。如果长期没操作，putty客户端没反应，只要重新用putty连接即可。）  </p>
+<p>#3.修改VPS登录密码:(该部分在putty中操作)</p>
+<p>##3.1<br>输入命令:”passwd”<br>要求输入新密码，按提示操作：</p>
+<p>##3.2<br>VPS安装ShadowSocks：运行以下命令:</p>
+<p>wget –no-check-certificate -O shadowsocks-all.sh <a href="https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh</a><br>chmod +x shadowsocks-all.sh<br>./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log<br>选择脚本python，然后设置“密码”“端口号”“加密方式改为aes-256-cfb”</p>
+<p>#4<br>最后在电脑中打开shadowsocks.exe（windows中谷歌浏览器需要设置-高级设置-打开代理设置-局域网设置-使用自动配置脚本：<a href="http://127.0.0.1:1080.....）或shadowsock-Qt5（ubuntu中系统设置-网络-网络代理-自动）" target="_blank" rel="noopener">http://127.0.0.1:1080.....）或shadowsock-Qt5（ubuntu中系统设置-网络-网络代理-自动）</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/21/VPS搭建shadowsock翻墙/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-ubuntu16-04装docker和redis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -493,10 +630,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>1.首先，在官网下载 JDK，下载完成后，双击可执行文件，将会进入 JDK 的安装界面：</p>
-<p>2.默认安装路径，然后配置环境变量，使 JDK 全局生效。首先，找到 JDK 的安装目录，以博主为例，进入这一层 C:\Program Files\Java\jdk1.8.0_121目录，复制以备后用。然后，通过“控制面板”进入“系统”属性，实际上直接选择“此电脑”点击右键选择“属性”即可：</p>
-<p>3.点击“高级系统设置”，再点击“环境变量”，选择“系统变量”区域的“新建”功能，设置系统变量名为JAVA_HOME，变量值为C:\Program Files\Java\jdk1.8.0_121，点击“确定”，然后打开“系统变量”区域的Path，新建加入%JAVA_HOME%\bin追加到Path变量值，</p>
-<p>4.验证是否安装成功：打开“命令行窗口”,输入命令java,再输入命令javac.自己试着用记事本写一个简单的HelloWorld。</p>
+        <p>1.首先，在官网下载 JDK，下载完成后，双击可执行文件，将会进入 JDK 的安装界面：<br>2.默认安装路径，然后配置环境变量，使 JDK 全局生效。首先，找到 JDK 的安装目录，以博主为例，进入这一层 C:\Program Files\Java\jdk1.8.0_121目录，复制以备后用。然后，通过“控制面板”进入“系统”属性，实际上直接选择“此电脑”点击右键选择“属性”即可：<br>3.点击“高级系统设置”，再点击“环境变量”，选择“系统变量”区域的“新建”功能，设置系统变量名为JAVA_HOME，变量值为C:\Program Files\Java\jdk1.8.0_121，点击“确定”，然后打开“系统变量”区域的Path，新建加入%JAVA_HOME%\bin追加到Path变量值，<br>4.验证是否安装成功：打开“命令行窗口”,输入命令java,再输入命令javac.自己试着用记事本写一个简单的HelloWorld。<br>5.Win+R 打开“运行” 输入cmd ，按回车；然后在DOS窗口分别输入”java”和”javac”测试javac和java<br>6.进入E盘新建一个HelloWorld.java，写一个<br>public class HelloWorld<br>{<br>    public static void main(String[] args)<br>    {System.out.println(“HelloWorld!”);}<br>}<br>然后在HelloWorld.java文件夹下运行shell命令（或者在DOS中输入“E:”然后回车进入E盘，dir查看该目录下文件，dir..返回上一文件夹），输入javac HelloWorld.java(编译后E盘里面多了个HelloWorld.class)然后再输入java HelloWorld运行程序。</p>
 
       
 
@@ -639,139 +773,6 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2018/01/29/VMware-Ubuntu/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Hexo-GithubPage搭建博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/03/Hexo-GithubPage搭建博客/">Hexo+GithubPage搭建博客</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/03/Hexo-GithubPage搭建博客/" class="archive-article-date">
-  	<time datetime="2018-01-03T08:21:33.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.安装git（ssh连接github）<br>2.安装Node.js<br>3.安装Hexo（建立文件夹Blog，npm install -g hexo-cli安装hexo，hexo init Myblog，在Myblog命令行下hexo s得到本机初始网页）<br>4.关联github（建立zhangdoubledong.github.io仓库，再修改Myblog下的_config.yml中deploy，再git config – global user.name “zhangdoubledong”和邮箱，<br>    再hexo s，npm install hexo-deployer-git –save，hexo clean，hexo g，hexo d则可以用网络浏览器浏览zhangdoubledong.github.io）<br>5.绑定域名（阿里云一元购域名，然后解析，CNAME中使用ping zhangdoubledong.github.io得到github的IP，修改仓库的Custom domain，在Myblog文件下的source中<br>    新建全格式的CNAME文件夹，内容为zhangdoubledong.tech，然后hexo clean，hexokinase个，hexo d就可用个性化域名浏览网站）<br>6.创建文件（hexo n “时间”，hexo s，hexo g，hexo d）</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/03/Hexo-GithubPage搭建博客/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-仓央嘉措诗集" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/01/03/仓央嘉措诗集/">仓央嘉措诗集</a>
-    </h1>
-  
-
-        
-        <a href="/2018/01/03/仓央嘉措诗集/" class="archive-article-date">
-  	<time datetime="2018-01-03T08:15:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p> 一<br> 姑娘<br> 你不相信<br> 那织成哈达的丝线<br> 那塑起的三彩和泥塑<br>连同着手里的雕纹和木琴<br> 都是我给你的爱<br> 都是我历经千劫万难不死的灵魂</p>
-<p> 姑娘<br> 一生太短<br> 拿不出任何信件给你<br> 虽然在你门前的莲花下<br> 我曾经试过<br> 我确实试过啊<br> 要对你千倍偿还</p>
-<p> 姑娘<br>我是多么希望多么希望<br>我连同这爱<br>一起在佛前坐化避过岁月的问<br>。。。。。。。。<br>             二<br>邂逅谁家一女郎，玉肌兰气郁芳香<br>可怜璀璨松精石，不遇知音在路旁<br>            三<br>心头影事幻重重，化作佳人绝代容<br>恰似东山山上月，轻轻走出最高峰<br>           四<br> 意外娉婷忽见知，结成鸢侣慰相思<br>此身似历茫茫海，一颗骊珠乍得时<br>          五<br>含情私询意中人，莫要空门证法身<br>卿果出家吾亦逝，入山与汝断红尘<br>         六<br>情到浓时起致词，可能长作玉交枝<br>除非死后当分散，不遣生前有别离<br>         七<br>十地庄严住法王，誓言呵护有金刚<br>神通大力知无敌，尽逐魔军去八荒<br>         八<br>拉萨游女漫如云，琼结佳人独秀群<br>我向此中求佳侣，最先属意便是军<br>         九<br>转眼枯荣就不同，昔日芳草化飞蓬<br>饶君老去形骸在，变似南方竹节弓<br>         十<br>手写瑶笺被雨淋，模糊点画费难寻<br>纵然灭却书中字，难灭情人一片心<br>        十一<br>深怜密爱誓终身，忽抱琵琶向别人<br>自理愁肠磨病骨，为卿憔悴欲成灰<br>        十二<br>长干小生最可怜，为立祥幡傍柳边<br>树底阿哥须护惜，莫教飞石到幡前<br>        十三<br>入定修观法眼开，启求三宝降灵台<br>观中诸圣何曾见，不请情人却自来<br>        十四<br>莫道无情渡口舟，舟中木马解回头<br>不知负义儿家胥，尚解回头一顾不<br>        十五<br>微笑知君欲诱谁，两行玉齿露参差<br>此时情意真相属，可肯依前举誓词<br>        十六<br>一自魂销那壁厢，至今寤寐不断忘<br>当时交臂还相失，今后思君空断肠<br>         十七<br>抱惯娇躯识重轻，就中难测是蜜意<br>输他一种占星术，繁星弥天认得清<br>         十八<br>。。。。。。。。。。。。<br>若你不是达赖，<br>若我早些遇见你，<br>若我还是当初的摸样，以为母亲的话是真的，<br>若我不是拉巴家的农奴，<br>若我可以跟你久一些，<br>若我能爱你更深一些，不在乎你在不在我身边，<br>若你知道我什么也没有<br>。。。。。。。。。<br>        十九<br>玉软香温被裹身，动人怜处是天真，<br>疑他别有机权在，巧为钱刀作笑颦<br>。。。。。。。<br>         二十<br>我与伊人本一家，情愿虽尽莫咨嗟<br>清明过了春回去，几见狂蜂恋落花<br>         二十一<br>贝齿微张笑靥开，双眸闪电座中央<br>无端觑看情郎面，不觉红涡晕两腮<br>         二十二<br>为坚幡憧诵梵经，欲凭道力感娉婷<br>琼筵果奉佳人召，知是前朝佛法灵<br>          二十三<br>少年浪迹爱章台，人命唯堪寄酒杯<br>传话当垆诸女伴，卿如不死定常来<br>          二十四<br>至今皈依喇嘛前，大道明明为我宣<br>无奈此心狂未歇，归来任到那人边<br>          二十五<br>静时修止动修观，历历情人挂眼前<br>肯把此心移学道，即生成佛有何难<br>          二十六<br>夜走拉萨逐绮罗，有名荡子是汪波<br>而今秘密浑无用，一路琼瑶足迹多<br>          二十七<br>为寻情侣去匆匆，破晓归来积雪中<br>就里机关谁识得，仓央嘉措布达拉<br>         二十八<br>结尽齐心缔尽缘，此生虽短意缠绵<br>与卿再世相逢日，玉树临风一少年<br>         二十九（此诗是其他人著）<br>红豆生南国，春来发几枝<br>愿君多采撷，此物最相思<br>         三十（最喜欢）<br>但曾相见便相知，想见和如不见时？<br>安得与君向决绝，免教辛苦作相思<br>         三十一<br>名门娇女态翩翩，阅尽倾城觉汝闲<br>比似园林多少书，枝头一果骋鲜妍<br>          三十二<br>明知宝物得来难，在手何曾作宝看<br>直至一朝遗失后，每思奇痛彻心肠<br>          三十三<br>不观生灭与无常，但逐轮回向死亡<br>绝顶聪明矜世智，叹他于此总茫茫<br>          三十四</p>
-<p>曾虑多情损梵行，入山又恐别倾城<br>世间安得两全法，不负如来不负卿<br>           三十五（扎西拉姆多多）<br>你见，或者不见我<br>我就在那里<br>不悲  不喜</p>
-<p>你念，或者不念我<br>情就在那里<br>不来   不去</p>
-<p>你爱，或者不爱我<br>爱就在那里<br>不增  不减</p>
-<p>你跟，或者不跟我<br>我的手就在你的手里<br>不舍  不弃</p>
-<p>来我怀里，或者<br>让我住进你的心里<br>默然   相爱<br>寂静    喜欢</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/01/03/仓央嘉措诗集/">展开全文 >></a>
         </p>
       
 
