@@ -155,6 +155,70 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-VMware-Ubuntu" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/01/29/VMware-Ubuntu/">VMware+Ubuntu</a>
+    </h1>
+  
+
+        
+        <a href="/2018/01/29/VMware-Ubuntu/" class="archive-article-date">
+  	<time datetime="2018-01-29T07:40:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>1.下载安装VMvare Workstation，安装过程中出现了”二进制转换与此平台长模式不兼容“问题，然后进入bois中设置Intel Virtual Technology更改为Enabled<br>2.Vmware创建虚拟机，下载Ubuntu的iso文件，按步骤设置输入虚拟机名称那里个性化Linux中全名设为zhangdoubledong<br>3.虚拟机开机后自己装系统，等待完成后，使用之前设置密码进入系统，更改system setting中的software&amp;updates选择中国区服务器mirrors.aliyun.com网速要好一点<br>4.在VMware workstation上方工具栏虚拟机机处点击重装VMware Tools，Ubuntu自己弹出VMware Tools的安装文件夹，双击VMware Tools-xxx.tar.gz解压提取到桌面后打开文件夹，在空白处右键选择在终端打开输入sudo ./vmware-install.pl回车，然后输入密码（密码默认看不见的），输完回车即可安装成功，然后再点击VMworkstation上方工具栏的查看-自动调整大小（即解决了屏幕大小问题）  </p>
+<p>##注意:今天在笔记本电脑装虚拟机下载VMworkstation14后出现“此主机不支持“AMD RVI”硬件辅助的 MMU 虚拟化。 模块“CPUIDEarly”启动失败”问题，然后进入bois设置CPU的virtualization然而并不能解决问题，此时你可以下载VMworkstation12来解决问题，因为VM14对一些CPU不再支持。<br>5.在Ubuntu16.04LTS下装Google拼音输入法，打开终端输入命令sudo apt-get intsall  fcitx fcitx-googlepinyin im-config,好了之后点击OK、YES、将fcitx设为默认的输入法框架点击OK，然后shutdown重启系统点击system settings中的text entry settings中加入google pinyin,然后系统右上角就出现一个蓝色的小g符号。 </p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/01/29/VMware-Ubuntu/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Hexo-GithubPage搭建博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
