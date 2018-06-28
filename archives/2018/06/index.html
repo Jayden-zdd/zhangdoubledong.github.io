@@ -6,11 +6,11 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Blog(zhangdoubledong)</title>
+  <title>Archives: 2018/6 | Blog(zhangdoubledong)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta property="og:type" content="website">
 <meta property="og:title" content="Blog(zhangdoubledong)">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/archives/2018/06/index.html">
 <meta property="og:site_name" content="Blog(zhangdoubledong)">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Blog(zhangdoubledong)">
@@ -155,664 +155,68 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-安装完ubuntu18.04" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
     
-    <div class="article-entry" itemprop="articleBody">
+    
       
-        <p>chrome:<br>1.启动终端<br>sudo wget <a href="https://repo.fdzh.org/chrome/google-chrome.list" target="_blank" rel="noopener">https://repo.fdzh.org/chrome/google-chrome.list</a> -P /etc/apt/sources.list.d/<br>将下载源加入到系统的源列表。<br> wget -q -O - <a href="https://dl.google.com/linux/linux_signing_key.pub" target="_blank" rel="noopener">https://dl.google.com/linux/linux_signing_key.pub</a>  | sudo apt-key add -<br>导入谷歌软件的公钥，用于下面步骤中对下载软件进行验证。<br>sudo apt-get update<br>用于对当前系统的可用更新列表进行更新。<br>sudo apt-get install google-chrome-stable<br>执行对谷歌 Chrome 浏览器（稳定版）的安装。<br>/usr/bin/google-chrome-stable<br>将会启动谷歌 Chrome 浏览器<br>2.移动unity<br>gsettings set com.canonical.Unity.Launcher launcher-position Bottom</p>
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2018" class="archive-year">2018</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/06/28/安装完ubuntu18.04/" class="archive-article-date">
+  	<time datetime="2018-06-28T12:42:01.671Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-28</time>
+</a>
+        </div>
+    	 
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/28/安装完ubuntu18.04/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-Entity-Recognition" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/28/Entity-Recognition/">Entity Recognition</a>
-    </h1>
-  
-
-        
-        <a href="/2018/06/28/Entity-Recognition/" class="archive-article-date">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2018/06/28/Entity-Recognition/" class="archive-article-date">
   	<time datetime="2018-06-28T12:35:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-06-28</time>
 </a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>串联抽取：实体识别的结果会影响到关系抽取的结果<br>1.手写规则<br>首先是基于字符串的 pattern，举一个 IS-A 的关系<br>Agar is a substance prepared from a mixture of red algae, such as Gelidium, for laboratory or industrial use<br>通过 such as 可以判断这是一种 IS-A 的关系，可以写的规则是：<br>“Y such as X ((, X)* (, and|or) X)”<br>“such Y as X”<br>“X or other Y”<br>“X and other Y”<br>“Y including X”<br>“Y, especially X”</p>
-<p>2.有监督（分类）<br>将关系抽取任务当做分类问题。根据训练数据设计有效的特征，从而学习各类分类模型，然后使用训练好的分类器预测关系。该方法的问题在于需要大量的人工标注训练语料，而语料标注工作通常非常耗时耗力。<br>步骤如下：</p>
-<ul>
-<li>选择我们想提取的关系集合</li>
-<li>选择相关的命名实体集合</li>
-<li>寻找并标注数据<br>  选择有代表性的语料库<br>  标记命名实体<br>  人工标注实体间的关系<br>  分成训练、开发、测试集</li>
-<li>训练分类器<br>为了提高 efficiency，通常我们会训练两个分类器，第一个分类器是 yes/no 的二分类，判断命名实体间是否有关系，如果有关系，再送到第二个分类器，给实体分配关系类别。这样做的好处是通过排除大多数的实体对来加快分类器的训练过程，另一方面，对每个任务可以使用 task-specific feature-set。<br>研究综述<br>漆桂林,高桓,吴天星.知识图谱研究进展[J].情报工程,2017,3(1):004-025<br>Zhou[13] 在 Kambhatla 的基础上加入了基本词组块信息和 WordNet，使用 SVM 作为分类器，在实体关系识别的准确率达到了 55.5%，实验表明实体类别信息的特征有助于提高关系抽取性能； Zelenko[14] 等人使用浅层句法分析树上最小公共子树来表达关系实例，计算两颗子树之间的核函数，通过训练例如 SVM 模型的分类器来对实例进行分。但基于核函数的方法的问题是召回率普遍较低，这是由于相似度计算过程匹配约束比较严格，因此在后续研究对基于核函数改进中，大部分是围绕改进召回率。但随着时间的推移，语料的增多、深度学习在图像和语音领域获得成功，信息抽取逐渐转向了基于神经模型的研究，相关的语料被提出作为测试标准，如 SemEval-2010 task 8[15]。基于神经网络方法的研究有，Hashimoto[16] 等人利用 Word Embedding 方法从标注语料中学习特定的名词对的上下文特征，然后将该特征加入到神经网络分类器中，在 SemEval-2010 task 8 上取得了 F1 值 82.8% 的效果。基于神经网络模型显著的特点是不需要加入太多的特征，一般可用的特征有词向量、位置等，因此有人提出利用基于联合抽取模型，这种模型可以同时抽取实体和其之间的关系。联合抽取模型的优点是可以避免流水线模型存在的错误累积[17-22]。其中比较有代表性的工作是[20]，该方法通过提出全新的全局特征作为算法的软约束，进而同时提高关系抽取和实体抽取的准确率，该方法在 ACE 语料上比传统的流水线方法 F1 提高了 1.5%，；另一项工作是 [22]，利用双层的 LSTM-RNN 模型训练分类模型，第一层 LSTM 输入的是词向量、位置特征和词性来识别实体的类型。训练得到的 LSTM 中隐藏层的分布式表达和实体的分类标签信息作为第二层 RNN 模型的输入，第二层的输入实体之间的依存路径，第二层训练对关系的分类，通过神经网络同时优化 LSTM 和 RNN 的模型参数，实验与另一个采用神经网络的联合抽取模型[21]相比在关系分类上有一定的提升。但无论是流水线方法还是联合抽取方法，都属于有监督学习，因此需要大量的训练语料，尤其是对基于神经网络的方法，需要大量的语料进行模型训练，因此这些方法都不适用于构建大规模的 Knowledge Base。</li>
-</ul>
-<p>3.半监督<br>半监督学习主要是利用少量的标注信息进行学习，这方面的工作主要是基于 Bootstrap 的方法。基于 Bootstrap 的方法主要是利用少量的实例作为初始种子(seed tuples)的集合，然后利用 pattern 学习方法进行学习，通过不断的迭代，从非结构化数据中抽取实例，然后从新学到的实例中学习新的 pattern 并扩充 pattern 集合。<br>漆桂林,高桓,吴天星.知识图谱研究进展[J].情报工程,2017,3(1):004-025<br>Brin[23]等人通过少量的实例学习种子模板，从网络上大量非结构化文本中抽取新的实例，同时学习新的抽取模板，其主要贡献是构建了 DIPRE 系统；Agichtein[24]在 Brin 的基础上对新抽取的实例进行可信度的评分和完善关系描述的模式，设计实现了 Snowball 抽取系统；此后的一些系统都沿着 Bootstrap 的方法，但会加入更合理的对 pattern 描述、更加合理的限制条件和评分策略，或者基于先前系统抽取结果上构建大规模 pattern；如 NELL（Never-EndingLanguage Learner）系统[25-26]，NELL 初始化一个本体和种子 pattern，从大规模的 Web 文本中学习，通过对学习到的内容进行打分来提高准确率，目前已经获得了 280 万个事实。</p>
-<p>从 5 对种子开始，找到包含种子的实例，替换关键词，形成 pattern，迭代匹配，就为 (authoer,book)(authoer,book) 抽取到了 relation pattern，x, by y, 和 x, one of y’s<br>Snowball对 Dipre 算法的改进。Snowball 也是一种相似的迭代算法，Dipre 的 X,Y 可以是任何字符串，而 Snowball 要求 X,Y 必须是命名实体，并且 Snowball 对每个 pattern 计算了 confidence value<br>Distant Supervision<br>Distant Supervision 其实结合了 bootstrapping 和监督学习的长处，它使用一个大的数据库来得到海量的 seed example，然后从这些 example 中创建许多的 feature，最后与有监督的分类器相结合。<br>与监督学习相似的是这种方法用许多的 feature 训练了一个分类器，通过详细的人工创造的知识进行监督，不需要用迭代的方法来扩充 pattern。<br>与无监督学习相似的是这种方法采用了大量没有标注的数据，对训练语料库中的 genre 并不敏感，适合泛化。<br>4.无监督<br>假设拥有相同语义关系的实体对拥有相似的上下文信息。因此可以利用每个实体对对应上下文信息来代表该实体对的语义关系，并对所有实体对的语义关系进行聚类。<br>无监督学习一般利用语料中存在的大量冗余信息做聚类，在聚类结果的基础上给定关系，但由于聚类方法本身就存在难以描述关系和低频实例召回率低的问题，因此无监督学习一般难以得很好的抽取效果。<br>与其他两种方法相比，有监督的学习方法能够抽取更有效的特征，其准确率和召回率都更高。</p>
-<p>深度学习<br>[Socher et al. 2012]提出使用递归神经网络来解决关系抽取问题。 </p>
-<ol>
-<li>该方法首先对句子进行句法解析； </li>
-<li>然后为句法树上的每个节点学习向量表示； </li>
-<li>通过递归神经网络，可以从句法树最顶端的词向量开始，按照句子的句法结构迭代合并，最终得到该句子的向量表示，并用于关系分类。<br>该方法能够有效地考虑句子的句法结构信息，但同时该方法无法很好的考虑两个实体在句子中的位置和句义信息。<br>[Zeng et al. 2014]提出采用卷积神经网络进行关系抽取。采用词汇向量和词的位置向量作为卷积神经网络的输入，通过卷积层、池化层和非线性层得到句子表示。通过考虑实体的位置向量和其他相关的词汇特征，句子中的实体信息能够较好地考虑到关系抽取中。<br>后来，[Santos et al. 2015]还提出了一种新的卷积神经网络进行关系抽取，其中采用了新的损失函数，能够有效地提高不同关系类别之间的区分性。<br>[Miwa et al. 2016]提出了一种基于端到端神经网络的关系抽取模型。该模型使用双向LSTM和树形LSTM同时对实体和句子进行建模。<br>目前基于卷积神经网络的方法在关系抽取的标准数据集SemEval-2010 Task 8 上取得了最好的效果。<br>上面介绍的神经网络模型在人工标注的数据集上取得了巨大成功。然而，与之前基于特征的关系抽取系统类似，神经网络关系抽取模型也面临着人工标注数据较少的问题。<br>[Zeng et al. 2015]尝试将基于卷积神经网络的关系抽取模型扩展到远程监督数据上。其中假设每个实体对的所有句子中至少存在一个句子反映该实体对的关系，提出了一种新的学习框架；以实体对为单位，对于每个实体对只考虑最能反映其关系的那个句子。该方法在一定程度上解决了神经网络关系抽取模型在远程监督数据上的应用，在 NYT10 数据集上取得了远远高于基于特征的关系抽取模型的预测效果。但是，该方法仍然存在一定的缺陷：该模型对于每个实体对只能选用一个句子进行学习和预测，损失了来自其他大量的有效句子的信息。<br>我们有没有可能把实体对对应的有噪音的句子过滤掉，然后利用所有有效句子进行学习和预测呢？ [Lin et al. 2016]提出了一种基于句子级别注意力机制的神经网络模型来解决这个问题，该方法能够根据特定关系为实体对的每个句子分配权重，通过不断学习能够使有效句子获得较高权重，而有噪音的句子获得较小的权重。与之间的模型相比，该方法取得较大提升<br>总体和未来趋势<br>关系抽取系统性能还有很大的提升空间，仍然有很多问题亟待解决<br>首先，基于句法树的树形LSTM神经网络模型在关系抽取上取得了不错的效果。这说明句法信息的引入对于关系抽取有一定帮助。然而，目前的句法分析仍然存在较多错误。在考虑句法信息的同时也引入了大量错误噪音。有研究表明，如果对于一个句子考虑其最可能的多个句法分析树，分析结果准确率可以得到较大提升。因此，一个重要的研究方向是，如何有效地将句子的多个可能句法树信息结合起来，用于关系抽取。<br>其次，目前的神经网络关系抽取主要用于预先设定好的关系集合。而面向开放领域的关系抽取，仍然是基于模板等比较传统的方法。因此，我们需要探索如何将神经网络引入开发领域的关系抽取，自动发现新的关系及其事实。此外，对现有神经网络模型如何对新增关系和样例进行快速学习也是值得探索的实用问题。<br>最后，目前关系抽取主要基于单语言文本。事实上，人类知识蕴藏于不同动态和类型的信息源中。我们需要探索如何利用多语言文本、图形和音频信息进行关系抽取。</li>
-</ol>
-<p>补充：句法分析旨在将句子从词语的序列形式按照某种语法体系转化为图结构（通常为树结构），以刻画句子内部的句法关系（主谓宾等），是自然语言处理的核心问题之一。依存语法是众多语法体系中的一种，它使用依存弧连接句子中两个具有一定句法关系的词语，最终形成一颗句法依存树。依存语法以其形式简洁、易于标注、便于应用等优点，受到越来越多研究人员的重视，已成为句法分析研究的主流，有效支撑了信息抽取、情感分析、机器翻译等多个研究任务。<br>例如，对于字面上非常相似的两个句子“您转的这篇文章很无知”和“您转这篇文章很无知”，虽然它们仅相差了一个“的”字，但是它们的含义完全不同，这主要是由于这两句话的主语不同造成的。图1分别给出了这两个句子的依存句法分析结果 [1]，我们可以看到第一句话的主语（SBV关系）是“文章”，而第二句话的主语是“转”的动作。可见，若不使用依存句法分析工具，很难判断这两句话的情感对象，即什么是“无知”的。</p>
-<p>主流依存句法分析方法分为基于图（Graph-based）和基于转移（Transition-based）两类：基于图的方法将依存句法分析看成从完全有向图中寻找最大生成树的问题，图中的边表示两个词之间存在某种句法关系的可能性；基于转移的方法通过一系列移进、规约等转移动作构建一棵依存句法树，学习的目标是寻找最优动作序列。与基于图的方法相比，基于转移的方法算法复杂度更低，因此具有更高的分析效率，同时由于能采用更丰富的特征，其分析准确率也与基于图的方法相当，因此受到了越来越多学者的关注，尤其是近年来很多深度学习技术都试图应用于基于转移的方法，因此本文也将重点介绍该类方法。<br>所谓深度学习技术，一般是指建立在含有多层非线性变换的神经网络结构之上，对数据的表示进行抽象和学习的一系列机器学习算法。该方法已对语音识别､图像处理等领域的进步起到了极大的推动作用，同时也引起了自然语言处理领域学者的广泛关注，已成功地应用于机器翻译、阅读理解、问答系统等任务，并已然成为新的自然语言处理标准方法。那么，近年来依存句法分析，尤其是基于转移的依存句法分析究竟是如何利用深度学习技术的呢？这些方法对其它研究领域是否也有借鉴意义呢？未来的研究方向会在哪里呢？本文试图就这些问题加以详细的阐述。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/28/Entity-Recognition/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-计算机网络" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+    	 
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/21/计算机网络/">计算机网络</a>
+      <a class="archive-article-title" href="/2018/06/28/Entity-Recognition/">Entity Recognition</a>
     </h1>
   
 
-        
-        <a href="/2018/05/21/计算机网络/" class="archive-article-date">
-  	<time datetime="2018-05-21T14:50:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#计算机网络  </p>
-<p>##物理层<br>计算机最基础的协议存在于物理层。所谓的物理层(physical layer)，是指光纤、电缆或者电磁波等真实存在的物理媒介。这些媒介可以传送物理信号，比如亮度、电压或者振幅。计算机最底层的信息是二进制码，只需要“0”和“1”就可以代表信息。所以在物理层，我们只需要约定两种物理信号来分别表示0和1，比如用高电压表示1，低电压表示0。从物理信号到二进制的约定就构成了物理层协议。针对特定的媒介，电脑可以有相应的接口，用来接收物理信号。随后，计算机将利用相应的物理层协议，把物理信号解读成为0/1序列。</p>
-<p>##连接层<br>连续的0/1序列就像没有标点的古文一样让人头昏脑胀。在连接层(link layer) 我们趁机把0/1序列分割成帧(frame)。所谓的帧，是一段有限的0/1序列。连接层协议能帮助计算机识别0/1序列中所包含的帧。它规定特殊的0/1组合来作为帧的起始和结束。连接层协议还规定了帧的格式。帧中包含有收信地址(Source, SRC)和送信地址(Destination, DST)，还有能够探测错误的校验序列(Frame Check Sequence)。当然，帧中最重要的是所要传输的数据 (payload)。与数据相配套，帧中也有数据的类型(Type)信息。连接层协议不关心数据中到底包含什么。帧就像是一个信封，把数据包裹起来。<br>以太网(Ethernet)和WiFi是现在最常见的连接层协议，分别用于有线和无线网络。通过连接层协议，我们可以指定帧的收信地址，从而把信息传递给某一计算机设备。但遗憾的是，帧的收信地址只能是本地局域网内的。因此，连接层更像是一个社区的邮差，他认识社区中的每一户人。社区中的每个人都可以将一封信(帧)交给他，让他送给同一社区的另一户人家。更远距离的通信还需要在更高层的网络层实现。</p>
-<p>##网络层<br>网络层(network layer)的目的是让不同的社区之间通信。 比如说，我们想让WiFi局域网上的一台计算机和以太局域网上的另一台计算机通信。这种时候，我们就需要一个“中间人”。这个“中间人”必须有以下功能:</p>
-<ol>
-<li>能从物理层上在两个网络的接收和发送0/1序列。  </li>
-<li>能同时理解两种网络的帧格式。<br>路由器(router)就是为此而产生的“中间人”设备。一个路由器有多个网卡(NIC，Network Interface Controller)，每个NIC可以接入多个网络，并理解相应的连接层协议。在帧经过路由到达另一个网络的时候，路由会读取帧的信息，并改写以发送到另一个网络。所以路由器就像是在两个社区都有分支的邮局。一个社区的邮差将信送到本社区的邮局分支，而邮局会通过自己在另一个地区的分支将信转交给另一个社区的邮差手中，并由另一个社区的邮差最终送到目的地。<br>我们说过，连接层的帧中只能记录本地的送信地址，如“第一条街第三座房子”或者说“中心十字路口拐角的小房子”这样一些本地人才了解的地址描述。邮局收到这样的信件就傻眼了，这让我送到纽约还是东京。邮局只能抱着侥幸心理读一下信纸——也就是帧的数据部分。哈，送信人居然也懂IP协议，在信纸的开头写上标准的邮编——IP地址。如果说目的地社区也归这个邮局管，那么邮局工作人员就把信纸重新装包到一个新的信封中，写上对应本地地址，交给那一个社区的邮差。然而，P地址也可能不在邮局的管辖范围内。邮局会把信件转交到其他邮局。有时候一封信要通过多个邮局转交，才能最终到达目的地，这个过程叫做路由(route)。邮局将分离的局域网络连接成了覆盖全球的互联网。<br>##传输层<br>上面的三层协议让不同的计算机之间可以通信。但计算机中实际上有多个运行着的程序，也就是所谓的进程。每个进程都可能有通信的需求。这就好像一所房子里住了好几个人。如何让信精确的送到某个人手里呢？遵照之前相同的逻辑，在网络层协议的数据部分增加传输层(transport layer)信息。我在信纸上增加新的信息，也就是收信人的姓名。大楼管理员从邮差手中接过信，会根据“收信人”，将信送给房子中的某个人。<br>传输层协议，比如TCP和UDP，使用端口号(port number)来识别收信人。在写信的时候，我们写上目的地的端口。当信到达目的地的管理员手中，他会根据传输层协议，识别端口号，将信送给不同的人。<br>传输层协议，比如TCP和UDP，使用端口号(port number)来识别收信人。在写信的时候，我们写上目的地的端口。当信到达目的地的管理员手中，他会根据传输层协议，识别端口号，将信送给不同的人。TCP和UDP协议是两种不同的传输层协议。UDP协议类似于我们的信件交流过程，一封信包含所有的信息。TCP协议则好像两个情人间的频繁通话。他们要表达的感情太多，以致于连续的发信。另一方必须将这些信按顺序排列起来，才能看明白全部的意思。此外，TCP协议还能控制网络交通，避免网络阻塞。由于完善的功能，TCP也成为最常用的传输层协议。<br>##应用层<br>通过上面的几层协议，我们已经可以在任意两个进程之间进行通信。然而，在应用层(application layer)上，我们还可以有更高层的协议。不同类型的进程就像从事不同行业的人。有的是律师，有的是外交官。某些行业会有特定的职业用语规范。律师之间的通信会用严格的律师术语，以免产生纠纷。外交官之间的通信，也要符合一定的外交格式，以免发生外交误会。如果是干间谍的，则要通过暗号来加密信息。同样，某个类型的应用可以使用某个应用层协议，进一步规范用语。应用层的协议包括用于Web的HTTP协议，用于传输文件的FTP协议，用于Email的IMAP等等。这些协议可以帮助计算机应用更稳定也更完善的通信<br>摘自：《邮局与邮差：网络协议概观》 — Vamei<br>在豆瓣阅读书店查看：<a href="https://read.douban.com/column/1788114/chapter/11928163/" target="_blank" rel="noopener">https://read.douban.com/column/1788114/chapter/11928163/</a><br>本作品由Vamei授权豆瓣阅读全球范围内电子版制作与发行。<br>© 版权所有，侵权必究。<br><img src="https://i.imgur.com/e4RcKkW.png" alt=""><br>#实验<br>###交换机和路由器的基本配置（命令行配置，同设备交叉线、异设备直连线（特殊：路由器和PC用交叉线连接，路由器IP是PC网关）<br>###单臂路由实现Vlan间路由（适用场景：销售部和技术部不能互相查看各自的资料，员工都连在一台交换机上，网络有一台路由器）<br>###静态路由配置（适用场景：校园网分两个区域，每个区域一台路由器，实现两个区域内子网之间的相互通信）</li>
-</ol>
+        <div class="article-info info-on-right">
+          
+          
 
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/21/计算机网络/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
-    <article id="post-Cisco-Packet-Tracer" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
+  
+    </div></section>
+  
+
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/04/Cisco-Packet-Tracer/">Cisco Packet Tracer</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/04/Cisco-Packet-Tracer/" class="archive-article-date">
-  	<time datetime="2018-05-04T07:17:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#实验一：Cisco Packet Tracer安装使用<br>拓扑图：路由器（分配IP）、交换机、PC<br>路由器设定IP为192.168.1.1，那么PC端需要设定网关为192.168.1.1，各个PC的IP地址可设为192.168.1.10或192.168.1.11等等，无线设备连接需要关机选择模板，然后把网口改成无线网卡，配置好可以自动连接</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/04/Cisco-Packet-Tracer/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-VPS搭建shadowsock翻墙" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/21/VPS搭建shadowsock翻墙/">VPS搭建shadowsock翻墙</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/21/VPS搭建shadowsock翻墙/" class="archive-article-date">
-  	<time datetime="2018-04-21T14:03:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#1.<br>国外的VPS提供商有好多，有名的Vultr、Digital Ocean、Linode、搬瓦工（bandwagonhost）。本文仅介绍Vultr，因为2.5美元/月性价比最高。<br><img src="https://i.imgur.com/6JCdwxk.png" alt=""></p>
-<p>#2.<br>Putty是一个免费SSH客户端，可以到 Putty官网 下载putty客户端，下载页面：<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html。SSH是一种安全协议，常用于连接服务器。" target="_blank" rel="noopener">http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html。SSH是一种安全协议，常用于连接服务器。</a></p>
-<p>##2.1<br>打开Putty，在Session页面填写VPS IP地址和Port（默认22）：</p>
-<p>##2.2<br>然后到Connection -&gt; Data填写登录用户名（root）：</p>
-<p>##2.3<br>填写完后，顺手保存一下Session</p>
-<p>##2.4<br>点击Open连接VPS，连接成功后，会提示输入Password，输入密码后（大小写敏感），如果出现[root@vultr ~]#表示成功登录。</p>
-<p>####（注意，SSH连接有超时时间，默认大概1分钟。如果长期没操作，putty客户端没反应，只要重新用putty连接即可。）  </p>
-<p>#3.修改VPS登录密码:(该部分在putty中操作)</p>
-<p>##3.1<br>输入命令:”passwd”<br>要求输入新密码，按提示操作</p>
-<p>##3.2<br>VPS安装ShadowSocks：运行以下命令:</p>
-<p>wget –no-check-certificate -O shadowsocks-all.sh <a href="https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh</a><br>chmod +x shadowsocks-all.sh<br>./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log<br>选择脚本python，然后设置“密码”“端口号”“加密方式改为aes-256-cfb”</p>
-<p>#4<br>最后在电脑中打开shadowsocks.exe（windows中谷歌浏览器需要设置-高级设置-打开代理设置-局域网设置-使用自动配置脚本：<a href="http://127.0.0.1:1080.....）或shadowsock-Qt5（ubuntu中系统设置-网络-网络代理-自动）" target="_blank" rel="noopener">http://127.0.0.1:1080.....）或shadowsock-Qt5（ubuntu中系统设置-网络-网络代理-自动）</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/21/VPS搭建shadowsock翻墙/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ubuntu16-04装docker和redis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/06/ubuntu16-04装docker和redis/">ubuntu16.04装docker</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/06/ubuntu16-04装docker和redis/" class="archive-article-date">
-  	<time datetime="2018-04-06T01:08:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#redis<br>$ sudo apt-get install redis-server<br>$ redis server<br>$ redis-cli</p>
-<p>#docker<br>$ sudo apt-get update<br>$ sudo apt-install docker<br>检测装好没有，$service docker start结果没有，输入$docker跟着引导安装<br>$sudo apt install docker.io<br>检查docker的版本docker –version</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/06/ubuntu16-04装docker和redis/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Ubuntu16-04中github与pycharm连接" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/04/Ubuntu16-04中github与pycharm连接/">Ubuntu16.04中github与pycharm连接</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/04/Ubuntu16-04中github与pycharm连接/" class="archive-article-date">
-  	<time datetime="2018-04-04T01:12:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1、在系统中安装git，在terminal中输入以下命令<br>sudo apt-get update<br>sudo apt-get install git</p>
-<p>2、对git进行配置，在terminal中输入以下命令<br>git config –global user.name “zhangdoubledong”<br>git config –global user.email “zhangdoubledong@163.com”<br>使用以下命令可以看到刚才的配置<br>git config –list</p>
-<p>3、对pycharm进行配置，依次点击<br>file–setting–version control–git首先要让pycharm检测到本地安装的git应用程序<br>file–setting–version control–github其次需要在此对话框中输入github用户名和密码，点击test可以看到是否测试成功</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/04/Ubuntu16-04中github与pycharm连接/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-win10局域网添加打印机" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/03/win10局域网添加打印机/">win10局域网添加打印机</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/03/win10局域网添加打印机/" class="archive-article-date">
-  	<time datetime="2018-04-03T08:22:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>win+R后输入\192.168.1.5（连接打印机共享的那台电脑的IP），出现了“你不能访问此共享文件夹，因为你组织的安全策略阻止未经身份验证的来宾访问”，此时你需要修改win10的网络策略，win+R后输入gpedit.msc来启动本地组策略编辑器。<br>依次找到“计算机配置-管理模板-网络-Lanman工作站”这个节点，在左侧点击“启动不安全的来宾登陆”这一条策略，状态从“未配置”改成“已启用”后点击确定按钮即可。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/03/win10局域网添加打印机/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ubuntu连接打印机" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/31/ubuntu连接打印机/">ubuntu连接打印机</a>
-    </h1>
-  
-
-        
-        <a href="/2018/03/31/ubuntu连接打印机/" class="archive-article-date">
-  	<time datetime="2018-03-31T07:08:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Ubuntu16.04局域网连接win7共享的HP打印机<br>1.点击系统设置-打印机-添加-查找网络打印机-输入win7电脑的ip地址（我的192.168.1.5）后查找（我的找不到所以用了SAMBA方式连接）<br>2.点击使用SAMBA的windows打印机，最上面的地址栏那里输入WorkGRoup/192.168.1.5结果点击浏览之后显示SMB浏览器中的WorkGroup后无法点击确定，百度一波之后就是在最上面的地址栏那里输入192.168.1.5/HPLaserJ点击浏览后就如下图所示：<br>输入你ubuntu的登录密码之后如下所示：<br>3.然后点击确定，此时别忘记点击前进，进入安装驱动页面，根据打印机型号来选。此时会有两个驱动，第一个是推荐的，结果推荐的不能用，就换成了第二个。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/31/ubuntu连接打印机/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Synergy鼠标键盘控制多台电脑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/31/Synergy鼠标键盘控制多台电脑/">Synergy鼠标键盘控制多台电脑</a>
-    </h1>
-  
-
-        
-        <a href="/2018/03/31/Synergy鼠标键盘控制多台电脑/" class="archive-article-date">
-  	<time datetime="2018-03-31T06:37:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.下载synergy，ubuntu可以使用sudo apt install synergy，win10可以搜索下载，版本1.5之前的免费，1.5后的收费，注意ubuntu和win10的synergy的版本必须一样（否则可能无法连接或者ubuntu无法作为服务器端）<br>2.配置服务器端，server后configure interactively选择你要添加的其他电脑，注意给电脑命名（名称可以使用计算机-属性-电脑名称），然后点击start<br>3.配置客户端，win10电脑点击client，输入server IP（ubuntu电脑的IP），然后点击start</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/31/Synergy鼠标键盘控制多台电脑/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
-  
 
 
           </div>
@@ -834,9 +238,9 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
+		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

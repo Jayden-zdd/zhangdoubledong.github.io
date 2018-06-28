@@ -6,14 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Blog(zhangdoubledong)</title>
+  <title>Entity Recognition | Blog(zhangdoubledong)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Blog(zhangdoubledong)">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="串联抽取：实体识别的结果会影响到关系抽取的结果1.手写规则首先是基于字符串的 pattern，举一个 IS-A 的关系Agar is a substance prepared from a mixture of red algae, such as Gelidium, for laboratory or industrial use通过 such as 可以判断这是一种 IS-A 的关系，可以写的">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Entity Recognition">
+<meta property="og:url" content="http://yoursite.com/2018/06/28/Entity-Recognition/index.html">
 <meta property="og:site_name" content="Blog(zhangdoubledong)">
+<meta property="og:description" content="串联抽取：实体识别的结果会影响到关系抽取的结果1.手写规则首先是基于字符串的 pattern，举一个 IS-A 的关系Agar is a substance prepared from a mixture of red algae, such as Gelidium, for laboratory or industrial use通过 such as 可以判断这是一种 IS-A 的关系，可以写的">
+<meta property="og:updated_time" content="2018-06-28T12:41:41.024Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Blog(zhangdoubledong)">
+<meta name="twitter:title" content="Entity Recognition">
+<meta name="twitter:description" content="串联抽取：实体识别的结果会影响到关系抽取的结果1.手写规则首先是基于字符串的 pattern，举一个 IS-A 的关系Agar is a substance prepared from a mixture of red algae, such as Gelidium, for laboratory or industrial use通过 such as 可以判断这是一种 IS-A 的关系，可以写的">
   
     <link rel="alternative" href="/atom.xml" title="Blog(zhangdoubledong)" type="application/atom+xml">
   
@@ -153,64 +157,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-安装完ubuntu18.04" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>chrome:<br>1.启动终端<br>sudo wget <a href="https://repo.fdzh.org/chrome/google-chrome.list" target="_blank" rel="noopener">https://repo.fdzh.org/chrome/google-chrome.list</a> -P /etc/apt/sources.list.d/<br>将下载源加入到系统的源列表。<br> wget -q -O - <a href="https://dl.google.com/linux/linux_signing_key.pub" target="_blank" rel="noopener">https://dl.google.com/linux/linux_signing_key.pub</a>  | sudo apt-key add -<br>导入谷歌软件的公钥，用于下面步骤中对下载软件进行验证。<br>sudo apt-get update<br>用于对当前系统的可用更新列表进行更新。<br>sudo apt-get install google-chrome-stable<br>执行对谷歌 Chrome 浏览器（稳定版）的安装。<br>/usr/bin/google-chrome-stable<br>将会启动谷歌 Chrome 浏览器<br>2.移动unity<br>gsettings set com.canonical.Unity.Launcher launcher-position Bottom</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/28/安装完ubuntu18.04/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Entity-Recognition" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-Entity-Recognition" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/06/28/Entity-Recognition/">Entity Recognition</a>
+    <h1 class="article-title" itemprop="name">
+      Entity Recognition
     </h1>
   
 
@@ -245,6 +199,27 @@
       
 
       
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
     </div>
     <div class="article-info article-info-index">
       
@@ -252,16 +227,84 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/06/28/Entity-Recognition/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/06/28/Entity-Recognition/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/06/28/安装完ubuntu18.04/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          (no title)
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/05/21/计算机网络/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">计算机网络</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -281,537 +324,14 @@
 
 
 
-
-  
-    <article id="post-计算机网络" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/21/计算机网络/">计算机网络</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/21/计算机网络/" class="archive-article-date">
-  	<time datetime="2018-05-21T14:50:43.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#计算机网络  </p>
-<p>##物理层<br>计算机最基础的协议存在于物理层。所谓的物理层(physical layer)，是指光纤、电缆或者电磁波等真实存在的物理媒介。这些媒介可以传送物理信号，比如亮度、电压或者振幅。计算机最底层的信息是二进制码，只需要“0”和“1”就可以代表信息。所以在物理层，我们只需要约定两种物理信号来分别表示0和1，比如用高电压表示1，低电压表示0。从物理信号到二进制的约定就构成了物理层协议。针对特定的媒介，电脑可以有相应的接口，用来接收物理信号。随后，计算机将利用相应的物理层协议，把物理信号解读成为0/1序列。</p>
-<p>##连接层<br>连续的0/1序列就像没有标点的古文一样让人头昏脑胀。在连接层(link layer) 我们趁机把0/1序列分割成帧(frame)。所谓的帧，是一段有限的0/1序列。连接层协议能帮助计算机识别0/1序列中所包含的帧。它规定特殊的0/1组合来作为帧的起始和结束。连接层协议还规定了帧的格式。帧中包含有收信地址(Source, SRC)和送信地址(Destination, DST)，还有能够探测错误的校验序列(Frame Check Sequence)。当然，帧中最重要的是所要传输的数据 (payload)。与数据相配套，帧中也有数据的类型(Type)信息。连接层协议不关心数据中到底包含什么。帧就像是一个信封，把数据包裹起来。<br>以太网(Ethernet)和WiFi是现在最常见的连接层协议，分别用于有线和无线网络。通过连接层协议，我们可以指定帧的收信地址，从而把信息传递给某一计算机设备。但遗憾的是，帧的收信地址只能是本地局域网内的。因此，连接层更像是一个社区的邮差，他认识社区中的每一户人。社区中的每个人都可以将一封信(帧)交给他，让他送给同一社区的另一户人家。更远距离的通信还需要在更高层的网络层实现。</p>
-<p>##网络层<br>网络层(network layer)的目的是让不同的社区之间通信。 比如说，我们想让WiFi局域网上的一台计算机和以太局域网上的另一台计算机通信。这种时候，我们就需要一个“中间人”。这个“中间人”必须有以下功能:</p>
-<ol>
-<li>能从物理层上在两个网络的接收和发送0/1序列。  </li>
-<li>能同时理解两种网络的帧格式。<br>路由器(router)就是为此而产生的“中间人”设备。一个路由器有多个网卡(NIC，Network Interface Controller)，每个NIC可以接入多个网络，并理解相应的连接层协议。在帧经过路由到达另一个网络的时候，路由会读取帧的信息，并改写以发送到另一个网络。所以路由器就像是在两个社区都有分支的邮局。一个社区的邮差将信送到本社区的邮局分支，而邮局会通过自己在另一个地区的分支将信转交给另一个社区的邮差手中，并由另一个社区的邮差最终送到目的地。<br>我们说过，连接层的帧中只能记录本地的送信地址，如“第一条街第三座房子”或者说“中心十字路口拐角的小房子”这样一些本地人才了解的地址描述。邮局收到这样的信件就傻眼了，这让我送到纽约还是东京。邮局只能抱着侥幸心理读一下信纸——也就是帧的数据部分。哈，送信人居然也懂IP协议，在信纸的开头写上标准的邮编——IP地址。如果说目的地社区也归这个邮局管，那么邮局工作人员就把信纸重新装包到一个新的信封中，写上对应本地地址，交给那一个社区的邮差。然而，P地址也可能不在邮局的管辖范围内。邮局会把信件转交到其他邮局。有时候一封信要通过多个邮局转交，才能最终到达目的地，这个过程叫做路由(route)。邮局将分离的局域网络连接成了覆盖全球的互联网。<br>##传输层<br>上面的三层协议让不同的计算机之间可以通信。但计算机中实际上有多个运行着的程序，也就是所谓的进程。每个进程都可能有通信的需求。这就好像一所房子里住了好几个人。如何让信精确的送到某个人手里呢？遵照之前相同的逻辑，在网络层协议的数据部分增加传输层(transport layer)信息。我在信纸上增加新的信息，也就是收信人的姓名。大楼管理员从邮差手中接过信，会根据“收信人”，将信送给房子中的某个人。<br>传输层协议，比如TCP和UDP，使用端口号(port number)来识别收信人。在写信的时候，我们写上目的地的端口。当信到达目的地的管理员手中，他会根据传输层协议，识别端口号，将信送给不同的人。<br>传输层协议，比如TCP和UDP，使用端口号(port number)来识别收信人。在写信的时候，我们写上目的地的端口。当信到达目的地的管理员手中，他会根据传输层协议，识别端口号，将信送给不同的人。TCP和UDP协议是两种不同的传输层协议。UDP协议类似于我们的信件交流过程，一封信包含所有的信息。TCP协议则好像两个情人间的频繁通话。他们要表达的感情太多，以致于连续的发信。另一方必须将这些信按顺序排列起来，才能看明白全部的意思。此外，TCP协议还能控制网络交通，避免网络阻塞。由于完善的功能，TCP也成为最常用的传输层协议。<br>##应用层<br>通过上面的几层协议，我们已经可以在任意两个进程之间进行通信。然而，在应用层(application layer)上，我们还可以有更高层的协议。不同类型的进程就像从事不同行业的人。有的是律师，有的是外交官。某些行业会有特定的职业用语规范。律师之间的通信会用严格的律师术语，以免产生纠纷。外交官之间的通信，也要符合一定的外交格式，以免发生外交误会。如果是干间谍的，则要通过暗号来加密信息。同样，某个类型的应用可以使用某个应用层协议，进一步规范用语。应用层的协议包括用于Web的HTTP协议，用于传输文件的FTP协议，用于Email的IMAP等等。这些协议可以帮助计算机应用更稳定也更完善的通信<br>摘自：《邮局与邮差：网络协议概观》 — Vamei<br>在豆瓣阅读书店查看：<a href="https://read.douban.com/column/1788114/chapter/11928163/" target="_blank" rel="noopener">https://read.douban.com/column/1788114/chapter/11928163/</a><br>本作品由Vamei授权豆瓣阅读全球范围内电子版制作与发行。<br>© 版权所有，侵权必究。<br><img src="https://i.imgur.com/e4RcKkW.png" alt=""><br>#实验<br>###交换机和路由器的基本配置（命令行配置，同设备交叉线、异设备直连线（特殊：路由器和PC用交叉线连接，路由器IP是PC网关）<br>###单臂路由实现Vlan间路由（适用场景：销售部和技术部不能互相查看各自的资料，员工都连在一台交换机上，网络有一台路由器）<br>###静态路由配置（适用场景：校园网分两个区域，每个区域一台路由器，实现两个区域内子网之间的相互通信）</li>
-</ol>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/21/计算机网络/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Cisco-Packet-Tracer" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/04/Cisco-Packet-Tracer/">Cisco Packet Tracer</a>
-    </h1>
-  
-
-        
-        <a href="/2018/05/04/Cisco-Packet-Tracer/" class="archive-article-date">
-  	<time datetime="2018-05-04T07:17:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#实验一：Cisco Packet Tracer安装使用<br>拓扑图：路由器（分配IP）、交换机、PC<br>路由器设定IP为192.168.1.1，那么PC端需要设定网关为192.168.1.1，各个PC的IP地址可设为192.168.1.10或192.168.1.11等等，无线设备连接需要关机选择模板，然后把网口改成无线网卡，配置好可以自动连接</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/04/Cisco-Packet-Tracer/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-VPS搭建shadowsock翻墙" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/21/VPS搭建shadowsock翻墙/">VPS搭建shadowsock翻墙</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/21/VPS搭建shadowsock翻墙/" class="archive-article-date">
-  	<time datetime="2018-04-21T14:03:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-21</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#1.<br>国外的VPS提供商有好多，有名的Vultr、Digital Ocean、Linode、搬瓦工（bandwagonhost）。本文仅介绍Vultr，因为2.5美元/月性价比最高。<br><img src="https://i.imgur.com/6JCdwxk.png" alt=""></p>
-<p>#2.<br>Putty是一个免费SSH客户端，可以到 Putty官网 下载putty客户端，下载页面：<a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html。SSH是一种安全协议，常用于连接服务器。" target="_blank" rel="noopener">http://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html。SSH是一种安全协议，常用于连接服务器。</a></p>
-<p>##2.1<br>打开Putty，在Session页面填写VPS IP地址和Port（默认22）：</p>
-<p>##2.2<br>然后到Connection -&gt; Data填写登录用户名（root）：</p>
-<p>##2.3<br>填写完后，顺手保存一下Session</p>
-<p>##2.4<br>点击Open连接VPS，连接成功后，会提示输入Password，输入密码后（大小写敏感），如果出现[root@vultr ~]#表示成功登录。</p>
-<p>####（注意，SSH连接有超时时间，默认大概1分钟。如果长期没操作，putty客户端没反应，只要重新用putty连接即可。）  </p>
-<p>#3.修改VPS登录密码:(该部分在putty中操作)</p>
-<p>##3.1<br>输入命令:”passwd”<br>要求输入新密码，按提示操作</p>
-<p>##3.2<br>VPS安装ShadowSocks：运行以下命令:</p>
-<p>wget –no-check-certificate -O shadowsocks-all.sh <a href="https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh" target="_blank" rel="noopener">https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh</a><br>chmod +x shadowsocks-all.sh<br>./shadowsocks-all.sh 2&gt;&amp;1 | tee shadowsocks-all.log<br>选择脚本python，然后设置“密码”“端口号”“加密方式改为aes-256-cfb”</p>
-<p>#4<br>最后在电脑中打开shadowsocks.exe（windows中谷歌浏览器需要设置-高级设置-打开代理设置-局域网设置-使用自动配置脚本：<a href="http://127.0.0.1:1080.....）或shadowsock-Qt5（ubuntu中系统设置-网络-网络代理-自动）" target="_blank" rel="noopener">http://127.0.0.1:1080.....）或shadowsock-Qt5（ubuntu中系统设置-网络-网络代理-自动）</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/21/VPS搭建shadowsock翻墙/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ubuntu16-04装docker和redis" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/06/ubuntu16-04装docker和redis/">ubuntu16.04装docker</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/06/ubuntu16-04装docker和redis/" class="archive-article-date">
-  	<time datetime="2018-04-06T01:08:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>#redis<br>$ sudo apt-get install redis-server<br>$ redis server<br>$ redis-cli</p>
-<p>#docker<br>$ sudo apt-get update<br>$ sudo apt-install docker<br>检测装好没有，$service docker start结果没有，输入$docker跟着引导安装<br>$sudo apt install docker.io<br>检查docker的版本docker –version</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/06/ubuntu16-04装docker和redis/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Ubuntu16-04中github与pycharm连接" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/04/Ubuntu16-04中github与pycharm连接/">Ubuntu16.04中github与pycharm连接</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/04/Ubuntu16-04中github与pycharm连接/" class="archive-article-date">
-  	<time datetime="2018-04-04T01:12:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-04</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1、在系统中安装git，在terminal中输入以下命令<br>sudo apt-get update<br>sudo apt-get install git</p>
-<p>2、对git进行配置，在terminal中输入以下命令<br>git config –global user.name “zhangdoubledong”<br>git config –global user.email “zhangdoubledong@163.com”<br>使用以下命令可以看到刚才的配置<br>git config –list</p>
-<p>3、对pycharm进行配置，依次点击<br>file–setting–version control–git首先要让pycharm检测到本地安装的git应用程序<br>file–setting–version control–github其次需要在此对话框中输入github用户名和密码，点击test可以看到是否测试成功</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/04/Ubuntu16-04中github与pycharm连接/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-win10局域网添加打印机" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/03/win10局域网添加打印机/">win10局域网添加打印机</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/03/win10局域网添加打印机/" class="archive-article-date">
-  	<time datetime="2018-04-03T08:22:03.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-03</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>win+R后输入\192.168.1.5（连接打印机共享的那台电脑的IP），出现了“你不能访问此共享文件夹，因为你组织的安全策略阻止未经身份验证的来宾访问”，此时你需要修改win10的网络策略，win+R后输入gpedit.msc来启动本地组策略编辑器。<br>依次找到“计算机配置-管理模板-网络-Lanman工作站”这个节点，在左侧点击“启动不安全的来宾登陆”这一条策略，状态从“未配置”改成“已启用”后点击确定按钮即可。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/03/win10局域网添加打印机/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-ubuntu连接打印机" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/31/ubuntu连接打印机/">ubuntu连接打印机</a>
-    </h1>
-  
-
-        
-        <a href="/2018/03/31/ubuntu连接打印机/" class="archive-article-date">
-  	<time datetime="2018-03-31T07:08:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Ubuntu16.04局域网连接win7共享的HP打印机<br>1.点击系统设置-打印机-添加-查找网络打印机-输入win7电脑的ip地址（我的192.168.1.5）后查找（我的找不到所以用了SAMBA方式连接）<br>2.点击使用SAMBA的windows打印机，最上面的地址栏那里输入WorkGRoup/192.168.1.5结果点击浏览之后显示SMB浏览器中的WorkGroup后无法点击确定，百度一波之后就是在最上面的地址栏那里输入192.168.1.5/HPLaserJ点击浏览后就如下图所示：<br>输入你ubuntu的登录密码之后如下所示：<br>3.然后点击确定，此时别忘记点击前进，进入安装驱动页面，根据打印机型号来选。此时会有两个驱动，第一个是推荐的，结果推荐的不能用，就换成了第二个。</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/31/ubuntu连接打印机/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-Synergy鼠标键盘控制多台电脑" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/31/Synergy鼠标键盘控制多台电脑/">Synergy鼠标键盘控制多台电脑</a>
-    </h1>
-  
-
-        
-        <a href="/2018/03/31/Synergy鼠标键盘控制多台电脑/" class="archive-article-date">
-  	<time datetime="2018-03-31T06:37:02.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-31</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1.下载synergy，ubuntu可以使用sudo apt install synergy，win10可以搜索下载，版本1.5之前的免费，1.5后的收费，注意ubuntu和win10的synergy的版本必须一样（否则可能无法连接或者ubuntu无法作为服务器端）<br>2.配置服务器端，server后configure interactively选择你要添加的其他电脑，注意给电脑命名（名称可以使用计算机-属性-电脑名称），然后点击start<br>3.配置客户端，win10电脑点击client，输入server IP（ubuntu电脑的IP），然后点击start</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/03/31/Synergy鼠标键盘控制多台电脑/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
   
   
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
+  
+
+  
+
+  
+
   
 
 
@@ -834,8 +354,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
